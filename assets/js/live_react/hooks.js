@@ -30,6 +30,7 @@ function getProps(hook) {
     removeHandleEvent: hook.removeHandleEvent.bind(hook),
     upload: hook.upload.bind(hook),
     uploadTo: hook.uploadTo.bind(hook),
+    navigate: hook.js().navigate.bind(hook),
   };
 }
 

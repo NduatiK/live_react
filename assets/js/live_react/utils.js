@@ -9,6 +9,7 @@ function getHooks(props) {
     removeHandleEvent: props.removeHandleEvent,
     upload: props.upload,
     uploadTo: props.uploadTo,
+    navigate: props.navigate,
   };
 }
 
