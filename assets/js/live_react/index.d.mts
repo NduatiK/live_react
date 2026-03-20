@@ -1,8 +1,8 @@
 import React from "react";
 
 type NavigationOpts = {
-    /** Whether to replace the current history entry instead of pushing a new one. */
-    replace?: boolean;
+  /** Whether to replace the current history entry instead of pushing a new one. */
+  replace?: boolean;
 };
 
 export interface LiveProps {
@@ -24,7 +24,7 @@ export interface LiveProps {
   removeHandleEvent: (callbackRef: string) => void;
   upload: (name: string, files: FileList | File[]) => void;
   uploadTo: (target: string, name: string, files: FileList | File[]) => void;
-  navigate: (href: string, opts?: NavigationOpts): void;
+  navigate: (href: string, opts?: NavigationOpts) => void;
 }
 
 export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
